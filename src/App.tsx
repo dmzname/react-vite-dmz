@@ -1,10 +1,12 @@
-import './App.css'
+import './App.css';
+import { ReactComponent as Logo } from './assets/zd_logo.svg';
 
 function App() {
 
   return (
     <>
-      <p>Soon...</p>
+        <Logo />
+        <p>Soon...</p>
     </>
   )
 }
