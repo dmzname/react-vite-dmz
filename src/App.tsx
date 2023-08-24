@@ -1,5 +1,5 @@
 import './App.css';
-import { ReactComponent as Logo } from './assets/zd_logo.svg';
+import { ReactComponent as Logo } from './assets/dmz_logo.svg';
 
 function App() {
 
