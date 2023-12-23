@@ -6,7 +6,7 @@ function App() {
   return (
     <>
         <Logo />
-        <p>Soon...</p>
+        <p>Soon... <i style={{fontSize:'26px'}}>(wait a little while)</i></p>
     </>
   )
 }
