@@ -15,7 +15,7 @@ export const CanvasHero = ({className}: ICanvasHeroProps) => {
         const c = canvasRef.current;
         const $ = c.getContext('2d'),
             _t = 1 / 360,
-            num = canvasWrap.current?.clientWidth - 200;
+            num = window.screen.width >= 1199.98 ? canvasWrap.current?.clientWidth - 200 : 1000;
 
             let b: number, x: number,  y: number, _u: number, _x: number, _y: number,
                 u= 0,
