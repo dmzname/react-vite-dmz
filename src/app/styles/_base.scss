@@ -1,5 +1,7 @@
 body {
     background-color: var(--bg-color);
+    font: 400 16px 'Nobile', sans-serif;
+    min-width: var(--layout-min);
 }
 
 .root-hero {
@@ -17,11 +19,8 @@ body {
     padding-top: 350px;
     display: flex;
     justify-content: flex-end;
-    font-size: 56px;
     text-transform: uppercase;
     letter-spacing: .1em;
-    font-family: sans-serif;
-    font-weight: 700;
     color: var(--brand-color-second);
     @media (max-width: 1199.98px) {
         width: 100%;

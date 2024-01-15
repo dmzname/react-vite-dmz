@@ -1,33 +1,20 @@
 .root {
   position: relative;
+  max-width: var(--layout-max);
+  margin: auto;
   z-index: 1;
   height: var(--header-size);
-  padding: 30px;
+  padding: 20px;
   display: flex;
-  align-items: flex-end;
-  color: var(--brand-color-first);
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  font-family: sans-serif;
-}
-
-.header-logo {
-  width: 50px;
-  height: auto;
-  fill: var(--brand-color-first);
-  margin-right: 41px;
-  &-link {
-    position: relative;
-    &::before {
-      content: '';
-      position: absolute;
-      left: 71px;
-      bottom: 0;
-      display: inline-block;
-      width: 1px;
-      height: 20px;
-      background-color: var(--brand-color-second);
-    }
+  align-items: center;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: calc(100% - 40px);
+    height: 1px;
+    opacity: .25;
+    background-color: var(--brand-color-second);
   }
 }

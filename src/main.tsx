@@ -8,3 +8,12 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <App />
   </React.StrictMode>,
 )
+
+//TODO: Подключить Prettier
+//TODO: Подключить Stylelint
+//TODO: Подключить мультилэнг
+//TODO: Подключить Jest
+//TODO: Подключить Storybook
+//TODO: Реализовать главный экран
+
+

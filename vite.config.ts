@@ -9,7 +9,8 @@ export default defineConfig({
     alias: {
       'shared': `${path.resolve(__dirname, "./src/shared/")}`,
     },
-    extensions: ['.mjs', '.js', '.mts', '.ts', '.jsx', '.tsx', '.json']
+    extensions: ['.mjs', '.js', '.mts', '.ts', '.jsx', '.tsx', '.json'],
+
   },
-  plugins: [svgr(), react()],
+  plugins: [svgr({include: "**/*.svg?react"}), react()],
 })

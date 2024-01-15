@@ -1,6 +1,7 @@
 import {classNames} from 'shared/lib/classNames/classNames';
 import cls from './Header.module.scss';
-import { ReactComponent as Logo } from 'shared/assets/dmz_logo.svg'
+import {HeaderLogo} from "./HeaderLogo/HeaderLogo";
+import {LanguageSwitcher} from "shared/ui/LanguageSwitcher";
 
 interface IHeaderProps {
     className?: string;
@@ -9,10 +10,8 @@ interface IHeaderProps {
 export const Header = ({className}: IHeaderProps) => {
     return (
         <header className={classNames(cls.root, {}, [className])}>
-            <a className={cls['header-logo-link']}>
-                <Logo className={cls['header-logo']} />
-                Dmitro Zabelin
-            </a>
+            <HeaderLogo />
+            <LanguageSwitcher />
         </header>
     );
 };

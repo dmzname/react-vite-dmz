@@ -1,9 +1,21 @@
 :root {
   // Sizes
-  --header-size: 90px;
+  --header-size: 70px;
+  --layout-max: 1360px;
+  --layout-min: 320px;
+  --layout-padding: 0 20px;
 
   // Colors
   --bg-color: #101010;
   --brand-color-first: #016466;
   --brand-color-second: #5E7AB8;
+
+  //Button colors
+  --btn-color-primary: #101010;
+  --btn-color-outline: #016466;
+  --btn-color-clear: #016466;
+  --btn-background-primary: #016466;
+  --btn-background-outline: transparent;
+  --btn-background-clear: transparent;
+  --btn-border-outline: #016466;
 }

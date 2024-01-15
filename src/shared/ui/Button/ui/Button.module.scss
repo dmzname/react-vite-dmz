@@ -1,0 +1,25 @@
+.root {
+    display: block;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-family: inherit;
+
+    &[disabled] {
+        opacity: .5;
+    }
+}
+
+.primary {
+    color: var(--btn-color-primary);
+    background-color: var(--btn-background-primary);
+}
+
+.outline {
+    color: var(--btn-color-outline);
+    border: 1px solid var(--btn-border-outline);
+}
+
+.clear {
+    color: var(--btn-color-clear);
+}

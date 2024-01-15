@@ -1,5 +1,5 @@
-import {CanvasHero} from "shared/CanvasHero";
 import {Header} from "../widgets/Header";
+import {CanvasHero} from "shared/ui/CanvasHero";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
               <div className={'hero-title'}>
                   Coming Soon
               </div>
-              <CanvasHero/>
+              <CanvasHero />
           </div>
       </>
   )
