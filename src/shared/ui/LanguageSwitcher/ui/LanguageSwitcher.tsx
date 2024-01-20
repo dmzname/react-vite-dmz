@@ -1,35 +1,43 @@
-import {classNames} from 'shared/lib/classNames/classNames.ts';
+import { classNames } from 'shared/lib/classNames/classNames.ts';
 import cls from './LanguageSwitcher.module.scss';
-import {Button} from "shared/ui/Button";
-import {ButtonTheme} from "shared/ui/Button/types/ButtonTypes.ts";
-import {useState} from "react";
+import { useTranslation } from 'react-i18next';
+import { Button } from 'shared/ui/Button';
+import { ButtonTheme } from 'shared/ui/Button/types/ButtonTypes.ts';
 
 interface ILanguageSwitcherProps {
     className?: string;
 }
 
-export const LanguageSwitcher = ({className}: ILanguageSwitcherProps) => {
+export const LanguageSwitcher = ({ className }: ILanguageSwitcherProps) => {
     // TODO: Убрать потом сделать с помощью i18n.changeLanguage(locale)
-    const [locale, setLocale] = useState('ua')
+    const { i18n } = useTranslation();
 
     const handleLang = (locale: string) => {
-        setLocale(locale);
+        i18n.changeLanguage(locale);
     };
 
     return (
         <div className={classNames(cls.root, {}, [className])}>
-            <Button
-                theme={ButtonTheme.CLEAR}
-                className={classNames(cls['language-switcher-btn'], {[cls.active]: locale === 'ua'})}
-                onClick={() => handleLang('ua')}>ua</Button>
-            <Button
-                theme={ButtonTheme.CLEAR}
-                className={classNames(cls['language-switcher-btn'], {[cls.active]: locale === 'en'})}
-                onClick={() => handleLang('en')}>en</Button>
-            <Button
-                theme={ButtonTheme.CLEAR}
-                className={classNames(cls['language-switcher-btn'], {[cls.active]: locale === 'ru'})}
-                onClick={() => handleLang('ru')}>ru</Button>
+            <div className={classNames(cls.root, {}, [className])}>
+                <Button
+                    theme={ButtonTheme.CLEAR}
+                    className={classNames(cls.btn, { [cls.active]: i18n.language === 'ua' })}
+                    onClick={() => handleLang('ua')}>
+                    UA
+                </Button>
+                <Button
+                    theme={ButtonTheme.CLEAR}
+                    className={classNames(cls.btn, { [cls.active]: i18n.language === 'en' })}
+                    onClick={() => handleLang('en')}>
+                    EN
+                </Button>
+                <Button
+                    theme={ButtonTheme.CLEAR}
+                    className={classNames(cls.btn, { [cls.active]: i18n.language === 'ru' })}
+                    onClick={() => handleLang('ru')}>
+                    RU
+                </Button>
+            </div>
         </div>
     );
 };

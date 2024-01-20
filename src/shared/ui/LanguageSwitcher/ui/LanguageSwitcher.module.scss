@@ -1,32 +1,41 @@
 .root {
   position: relative;
+
   display: flex;
+
   &::before, &::after {
     content: '';
     position: absolute;
     bottom: calc(50% - 3px);
+
     display: inline-block;
     width: 1px;
     height: 10px;
+
     opacity: .5;
     background-color: var(--brand-color-second);
   }
-  &::before{
+
+  &::before {
     left: 26px;
   }
+
   &::after {
     right: 30px;
   }
 }
 
-.language-switcher-btn {
+.btn {
   padding: 0;
+
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 1.8px;
+
   &:not(.active) {
     opacity: .5;
   }
+
   &:not(:last-child) {
     margin-right: 15px;
   }

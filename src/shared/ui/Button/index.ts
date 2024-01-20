@@ -1,1 +1,1 @@
-export {Button} from './ui/Button.tsx'
+export { Button } from './ui/Button.tsx';

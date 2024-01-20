@@ -1,1 +1,1 @@
-export {CanvasHero} from './ui/CanvasHero'
+export { CanvasHero } from './ui/CanvasHero';

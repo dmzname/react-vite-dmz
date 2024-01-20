@@ -1,25 +1,33 @@
 .root {
   position: relative;
+
   margin-right: auto;
-  text-transform: uppercase;
-  color: var(--brand-color-first);
+
   letter-spacing: 2.1px;
+  text-transform: uppercase;
+
+  color: var(--brand-color-first);
+
   &::before {
     content: '';
     position: absolute;
     left: 71px;
     bottom: 0;
+
     display: inline-block;
     width: 1px;
     height: 20px;
+
     opacity: .5;
     background-color: var(--brand-color-second);
   }
+
   svg {
     width: 50px;
     height: auto;
-    fill: var(--brand-color-first);
     margin-right: 41px;
     margin-bottom: -3px;
+
+    fill: var(--brand-color-first);
   }
 }

@@ -1,19 +1,23 @@
 .root {
   position: relative;
-  max-width: var(--layout-max);
-  margin: auto;
   z-index: 1;
+
+  max-width: var(--layout-max);
   height: var(--header-size);
+  margin: auto;
   padding: 20px;
   display: flex;
   align-items: center;
+
   &::after {
     content: '';
     position: absolute;
     bottom: 0;
     left: 20px;
+
     width: calc(100% - 40px);
     height: 1px;
+
     opacity: .25;
     background-color: var(--brand-color-second);
   }
