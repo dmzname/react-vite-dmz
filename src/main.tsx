@@ -7,7 +7,7 @@ import { router } from './app/providers/router/router.tsx';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
-        <Suspense>
+        <Suspense fallback=''>
             <RouterProvider router={router} />
         </Suspense>
     </React.StrictMode>,

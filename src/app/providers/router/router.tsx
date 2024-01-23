@@ -6,9 +6,14 @@ import { AppLayout } from '../../layouts/AppLayout.tsx';
 export const router = createBrowserRouter([
     {
         path: '/',
+        loader: () => window.location,
         element: <AppLayout />,
         errorElement: <ErrorPage />,
         children: [
+            {
+                index: true,
+                element: <App />,
+            },
             {
                 path: '/:lang/',
                 element: <App />,
