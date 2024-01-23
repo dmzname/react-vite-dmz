@@ -17,11 +17,12 @@ module.exports = {
             { allowConstantExport: true },
         ],
         '@typescript-eslint/no-unused-vars': ['warn'],
+        '@typescript-eslint/no-explicit-any': ['warn'],
         'i18next/no-literal-string': [
             'error',
             {
-                'markupOnly': true
-            }
+                'markupOnly': true,
+            },
         ],
     },
 

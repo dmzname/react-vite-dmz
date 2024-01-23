@@ -1,0 +1,76 @@
+svg {
+  width: 678px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+}
+
+svg .svg-elem-1 {
+  transition: stroke-dashoffset 1s ease 0s;
+  stroke-dashoffset: 291.8983154296875px;
+  stroke-dasharray: 291.8983154296875px;
+}
+
+svg.active .svg-elem-1 {
+  stroke-dashoffset: 583.796630859375px;
+}
+
+svg .svg-elem-2 {
+  transition: stroke-dashoffset 1s ease 0.12s;
+  stroke-dashoffset: 399.14544677734375px;
+  stroke-dasharray: 399.14544677734375px;
+}
+
+svg.active .svg-elem-2 {
+  stroke-dashoffset: 798.2908935546875px;
+}
+
+svg .svg-elem-3 {
+  transition: stroke-dashoffset 1s ease 0.24s;
+  stroke-dashoffset: 266.22735595703125px;
+  stroke-dasharray: 266.22735595703125px;
+}
+
+svg.active .svg-elem-3 {
+  stroke-dashoffset: 532.4547119140625px;
+}
+
+svg .svg-elem-4 {
+  transition: stroke-dashoffset 1s ease 0.36s;
+  stroke-dashoffset: 242.85293579101562px;
+  stroke-dasharray: 242.85293579101562px;
+}
+
+svg.active .svg-elem-4 {
+  stroke-dashoffset: 485.70587158203125px;
+}
+
+svg .svg-elem-5 {
+  transition: stroke-dashoffset 1s ease 0.48s;
+  stroke-dashoffset: 174.9683074951172px;
+  stroke-dasharray: 174.9683074951172px;
+}
+
+svg.active .svg-elem-5 {
+  stroke-dashoffset: 349.9366149902344px;
+}
+
+svg .svg-elem-6 {
+  transition: stroke-dashoffset 1s ease 0.6s;
+  stroke-dashoffset: 291.8983154296875px;
+  stroke-dasharray: 291.8983154296875px;
+}
+
+svg.active .svg-elem-6 {
+  stroke-dashoffset: 583.796630859375px;
+}
+
+svg .svg-elem-7 {
+  transition: stroke-dashoffset 1s ease 0.72s;
+  stroke-dashoffset: 404.7693786621094px;
+  stroke-dasharray: 404.7693786621094px;
+}
+
+svg.active .svg-elem-7 {
+  stroke-dashoffset: 809.5387573242188px;
+}

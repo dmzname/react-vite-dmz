@@ -1,6 +1,8 @@
 .root {
   position: relative;
 
+  margin-bottom: 20px;
+
   display: flex;
 
   &::before, &::after {
@@ -22,6 +24,11 @@
 
   &::after {
     right: 30px;
+  }
+
+  @media (width >= 764px) {
+    margin-right: 50px;
+    margin-bottom: 0;
   }
 }
 

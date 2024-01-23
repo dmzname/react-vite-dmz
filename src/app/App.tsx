@@ -1,15 +1,11 @@
 import { Header } from 'widgets/Header';
-import { useTranslation } from 'react-i18next';
+import { HeroBlock } from 'widgets/HeroBlock';
 
 function App() {
-    const { t } = useTranslation();
-
     return (
         <>
             <Header />
-            <div className={'root-hero'}>
-                <div className={'hero-title'}>{t('Coming Soon')}</div>
-            </div>
+            <HeroBlock />
         </>
     );
 }

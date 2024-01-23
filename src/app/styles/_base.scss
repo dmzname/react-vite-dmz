@@ -6,34 +6,3 @@ body {
   background-color: var(--bg-color);
 }
 
-.root-hero {
-  display: flex;
-  width: 100%;
-
-  @media (width <= 1199.98px) {
-    flex-direction: column;
-  }
-}
-
-.hero-title {
-  position: relative;
-  z-index: 2;
-
-  width: 50%;
-  padding-top: 350px;
-  display: flex;
-  justify-content: flex-end;
-
-  text-transform: uppercase;
-  letter-spacing: .1em;
-
-  color: var(--brand-color-second);
-
-  @media (width <= 1199.98px) {
-    width: 100%;
-    padding-top: 150px;
-    justify-content: center;
-
-    text-align: center;
-  }
-}

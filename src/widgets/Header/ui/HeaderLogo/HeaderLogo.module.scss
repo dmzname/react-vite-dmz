@@ -1,8 +1,7 @@
 .root {
   position: relative;
 
-  margin-right: auto;
-
+  margin-bottom: 20px;
   letter-spacing: 2.1px;
   text-transform: uppercase;
 
@@ -29,5 +28,10 @@
     margin-bottom: -3px;
 
     fill: var(--brand-color-first);
+  }
+
+  @media (width >= 764px) {
+    margin-right: auto;
+    margin-bottom: 0;
   }
 }
