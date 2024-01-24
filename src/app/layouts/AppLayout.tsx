@@ -8,11 +8,13 @@ export const AppLayout = () => {
 
     useEffect(() => {
         const supportedLang = i18next.options.supportedLngs as string[];
+        const currentLang = lang ? lang : 'ua';
 
         if ((lang && !supportedLang?.includes(lang)) || lang === 'ua') {
             navigate('/');
         } else {
-            i18next.changeLanguage(lang ? lang : 'ua');
+            i18next.changeLanguage(currentLang);
+            document.documentElement.lang = currentLang;
         }
     }, [lang, navigate]);
 
