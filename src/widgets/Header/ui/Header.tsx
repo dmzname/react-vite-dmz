@@ -12,7 +12,7 @@ export const Header = ({ className }: IHeaderProps) => {
     return (
         <header className={classNames(cls.root, {}, [className])}>
             <HeaderLogo />
-            <LanguageSwitcher />
+            <LanguageSwitcher className={cls['header-lang']} />
             <Hamburger />
         </header>
     );

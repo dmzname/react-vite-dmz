@@ -1,19 +1,26 @@
 .root {
   position: relative;
 
-  margin-bottom: 20px;
-  letter-spacing: 2.1px;
-  text-transform: uppercase;
+  display: flex;
+  align-items: flex-end;
 
-  color: var(--brand-color-first);
+  p {
+    display: none;
+    margin-bottom: -3px;
+
+    letter-spacing: 2.1px;
+    text-transform: uppercase;
+
+    color: var(--brand-color-first);
+  }
 
   &::before {
     content: '';
     position: absolute;
-    left: 71px;
+    left: 61px;
     bottom: 0;
 
-    display: inline-block;
+    display: none;
     width: 1px;
     height: 20px;
 
@@ -24,14 +31,20 @@
   svg {
     width: 50px;
     height: auto;
-    margin-right: 41px;
-    margin-bottom: -3px;
+    margin-bottom: 0;
 
     fill: var(--brand-color-first);
   }
 
-  @media (width >= 764px) {
+  @media (width >= 480px) {
     margin-right: auto;
-    margin-bottom: 0;
+
+    p, &::before {
+      display: inline-block;
+    }
+
+    svg {
+      margin-right: 21px;
+    }
   }
 }
