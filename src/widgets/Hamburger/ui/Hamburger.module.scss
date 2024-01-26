@@ -1,5 +1,6 @@
 .root {
   position: relative;
+  z-index: var(--hamburger-index);
 
   width: 30px;
   height: 20px;

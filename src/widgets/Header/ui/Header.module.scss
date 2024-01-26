@@ -1,11 +1,9 @@
 .root {
   position: relative;
-  z-index: 1;
 
-  max-width: var(--layout-max);
   height: auto;
   margin: auto;
-  padding: 20px;
+  padding: 20px 10px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -14,9 +12,9 @@
     content: '';
     position: absolute;
     bottom: 0;
-    left: 20px;
+    left: 10px;
 
-    width: calc(100% - 40px);
+    width: calc(100% - 20px);
     height: 1px;
 
     opacity: .25;

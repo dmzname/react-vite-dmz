@@ -28,6 +28,9 @@
       ],
       "widgets/*": [
         "./src/widgets/*"
+      ],
+      "app/*": [
+        "./src/app/*"
       ]
     }
   },

@@ -13,7 +13,6 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     </React.StrictMode>,
 );
 
-//TODO: Подключить мультилэнг
 //TODO: Реализовать главный экран
 //TODO: Подключить Jest
 //TODO: Подключить Storybook

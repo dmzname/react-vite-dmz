@@ -9,6 +9,7 @@ export default defineConfig({
         alias: {
             shared: `${path.resolve(__dirname, './src/shared/')}`,
             widgets: `${path.resolve(__dirname, './src/widgets/')}`,
+            app: `${path.resolve(__dirname, './src/app/')}`,
         },
         extensions: ['.mjs', '.js', '.mts', '.ts', '.jsx', '.tsx', '.json'],
     },
