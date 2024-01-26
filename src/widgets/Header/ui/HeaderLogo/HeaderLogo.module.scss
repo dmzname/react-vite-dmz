@@ -1,3 +1,5 @@
+@import "styles/functions";
+
 .root {
   position: relative;
 
@@ -8,7 +10,7 @@
     display: none;
     margin-bottom: -3px;
 
-    letter-spacing: 2.1px;
+    letter-spacing: .25em;
     text-transform: uppercase;
 
     color: var(--brand-color-first);
@@ -45,6 +47,24 @@
 
     svg {
       margin-right: 21px;
+    }
+  }
+
+  @media (width > 1920px) {
+    p {
+      margin-bottom: vw(-3);
+    }
+
+    &::before {
+      left: vw(61);
+
+      width: vw(1);
+      height: vw(20);
+    }
+
+    svg {
+      width: vw(50);
+      margin-right: vw(21);
     }
   }
 }

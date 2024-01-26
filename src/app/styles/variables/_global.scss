@@ -1,6 +1,10 @@
+@import "../functions";
+
+$header-size: 70;
+
 :root {
   // Sizes
-  --header-size: 70px;
+  --header-size: #{$header-size}px;
   --layout-max: 1360px;
   --layout-min: 320px;
   --layout-padding: 0 20px;
@@ -22,4 +26,9 @@
   // Z-indexes
   --nav-index: 10;
   --hamburger-index: 11;
+
+  @media (width > 1920px) {
+    --layout-max: vw(1360);
+    --layout-padding: 0 vw(20);
+  }
 }

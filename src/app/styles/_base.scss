@@ -1,8 +1,15 @@
+@import "./functions";
+
 body {
   min-width: var(--layout-min);
 
-  font: 400 16px 'Nobile', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: 'Nobile', sans-serif;
 
   background-color: var(--bg-color);
-}
 
+  @media (width > 1920px) {
+    font-size: vw(16);
+  }
+}

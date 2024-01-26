@@ -1,12 +1,22 @@
+@import "styles/functions";
+@import "styles/variables/global";
+
+$header-height: vw($header-size);
+
 .root {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: calc(100vh - var(--header-size));
   max-width: var(--layout-max);
-  padding: 150px 10px 0;
+  padding: 150px 20px 0;
   margin: auto;
   align-items: center;
+
+  @media (width > 1920px) {
+    height: calc(100vh - #{$header-height});
+    padding: vw(150) vw(20) 0;
+  }
 }
 
 .hero-title {

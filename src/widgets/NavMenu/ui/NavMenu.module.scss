@@ -1,3 +1,5 @@
+@import "styles/functions";
+
 .root {
   position: fixed;
   inset: 0;
@@ -20,7 +22,7 @@
 
   animation: fade-out .3s ease both;
 
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(.75em);
 
   &.active {
     animation: fade-in .3s ease both;
@@ -39,6 +41,14 @@
 
   &:not(:last-child) {
     margin-bottom: 50px;
+  }
+
+  @media (width > 1920px) {
+    font-size: vw(36);
+
+    &:not(:last-child) {
+      margin-bottom: vw(50);
+    }
   }
 }
 

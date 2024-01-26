@@ -10,8 +10,12 @@ export default defineConfig({
             shared: `${path.resolve(__dirname, './src/shared/')}`,
             widgets: `${path.resolve(__dirname, './src/widgets/')}`,
             app: `${path.resolve(__dirname, './src/app/')}`,
+            styles: `${path.resolve(__dirname, './src/app/styles/')}`,
         },
         extensions: ['.mjs', '.js', '.mts', '.ts', '.jsx', '.tsx', '.json'],
     },
     plugins: [svgr({ include: '**/*.svg?react' }), react()],
+    server: {
+        open: true,
+    },
 });

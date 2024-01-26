@@ -1,3 +1,5 @@
+@import 'styles/functions';
+
 .root {
   position: relative;
   z-index: var(--hamburger-index);
@@ -22,7 +24,9 @@
     }
 
     &:nth-child(2) {
-      top: calc(50% - 1px);
+      top: 50%;
+
+      transform: translateY(-50%);
     }
 
     &:nth-child(3) {
@@ -46,6 +50,27 @@
         bottom: 9px;
 
         transform: rotate(-45deg);
+      }
+    }
+  }
+
+  @media (width > 1920px) {
+    width: vw(30);
+    height: vw(20);
+
+    span {
+      height: vw(2);
+    }
+
+    &.active {
+      span {
+        &:nth-child(1) {
+          top: vw(9);
+        }
+
+        &:nth-child(3) {
+          bottom: vw(9);
+        }
       }
     }
   }

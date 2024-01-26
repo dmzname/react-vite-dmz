@@ -7,6 +7,7 @@
     "font-family-name-quotes": null,
     "declaration-empty-line-before": null,
     "import-notation": null,
+    "number-max-precision": null,
     "order/order": [
       [
         "custom-properties",

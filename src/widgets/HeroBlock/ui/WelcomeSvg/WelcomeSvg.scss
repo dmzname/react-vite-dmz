@@ -1,8 +1,15 @@
+@import "styles/functions";
+
 svg {
   width: 678px;
   max-width: 100%;
   height: auto;
   margin-bottom: 100px;
+
+  @media (width > 1920px) {
+    width: vw(678);
+    margin-bottom: vw(100);
+  }
 }
 
 svg .svg-elem-1 {

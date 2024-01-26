@@ -1,29 +1,35 @@
+@import "styles/functions";
+
 .root {
-    display: block;
+  display: block;
 
-    font-family: inherit;
+  font-family: inherit;
 
-    border: none;
+  border: none;
 
-    background-color: transparent;
-    cursor: pointer;
+  background-color: transparent;
+  cursor: pointer;
 
-    &[disabled] {
-        opacity: .5;
-    }
+  &[disabled] {
+    opacity: .5;
+  }
 }
 
 .primary {
-    color: var(--btn-color-primary);
-    background-color: var(--btn-background-primary);
+  color: var(--btn-color-primary);
+  background-color: var(--btn-background-primary);
 }
 
 .outline {
-    border: 1px solid var(--btn-border-outline);
+  border: 1px solid var(--btn-border-outline);
 
-    color: var(--btn-color-outline);
+  color: var(--btn-color-outline);
+
+  @media (width > 1920px) {
+    border: vw(1) solid var(--btn-border-outline);
+  }
 }
 
 .clear {
-    color: var(--btn-color-clear);
+  color: var(--btn-color-clear);
 }
