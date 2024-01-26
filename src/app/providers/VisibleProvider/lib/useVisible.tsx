@@ -11,6 +11,7 @@ export function useVisible(): IUseVisibleResult {
     const { isVisible, setIsVisible } = useContext(VisibleContext);
 
     const toggleNavMenu = () => {
+        document.body.style.overflow = !isVisible.navMenu ? 'hidden' : '';
         setIsVisible({ ...isVisible, navMenu: !isVisible.navMenu });
     };
 
