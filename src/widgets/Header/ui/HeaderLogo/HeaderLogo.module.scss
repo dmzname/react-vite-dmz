@@ -40,14 +40,6 @@
 
   @media (width >= 480px) {
     margin-right: auto;
-
-    p, &::before {
-      display: inline-block;
-    }
-
-    svg {
-      margin-right: 21px;
-    }
   }
 
   @media (width > 1920px) {

@@ -1,6 +1,11 @@
 {
-  "Coming Soon": "Coming Soon",
   "Контакты": "Contacts",
   "Портфолио": "Portfolio",
-  "Обо мне": "About me"
+  "Обо мне": "About me",
+  "heroDescription1": "My name is Dmitry Zabelin, and I specialize in JavaScript development. Below, you'll find some of my web development projects that demonstrate my style and approach.",
+  "heroDescription2": "Prepared for intriguing challenges and available for new projects.",
+  "Прайс": "Price",
+  "Проекты": "Projects",
+  "Загрузить CV": "Download CV",
+  "свяжитесь со мной": "contact me"
 }

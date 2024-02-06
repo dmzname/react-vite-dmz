@@ -23,14 +23,17 @@
     "noFallthroughCasesInSwitch": true,
     "baseUrl": ".",
     "paths": {
-      "shared/*": [
-        "./src/shared/*"
+      "app/*": [
+        "./src/app/*"
       ],
       "widgets/*": [
         "./src/widgets/*"
       ],
-      "app/*": [
-        "./src/app/*"
+      "features/*": [
+        "./src/features/*"
+      ],
+      "shared/*": [
+        "./src/shared/*"
       ],
       "styles/*": [
         "./src/app/styles/*"

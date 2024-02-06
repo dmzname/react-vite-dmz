@@ -4,67 +4,70 @@
 $header-height: vw($header-size);
 
 .root {
+  padding: 0 15px;
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: calc(100vh - var(--header-size));
+  min-height: calc(100vh - var(--header-size));
   max-width: var(--layout-max);
-  padding: 150px 20px 0;
   margin: auto;
-  align-items: center;
 
   @media (width > 1920px) {
     height: calc(100vh - #{$header-height});
-    padding: vw(150) vw(20) 0;
   }
 }
 
-.hero-title {
-  position: relative;
-  z-index: 2;
+.hero {
+  &-info {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+  }
 
-  max-width: 100%;
+  &-image {
+    position: relative;
 
-  font-size: 2em;
-  letter-spacing: .3em;
-  text-align: center;
+    display: none;
 
-  text-transform: uppercase;
+    svg {
+      width: 850px;
+      max-width: 100%;
+      height: auto;
+    }
+  }
 
-  color: var(--brand-color-second);
+  &-description {
+    margin-bottom: 40px;
+    max-width: 700px;
 
-  animation-name: flip;
-  animation-duration: 1.5s;
-  animation-timing-function: ease;
-  animation-delay: 1s;
-  animation-fill-mode: both;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: .1em;
+    text-align: center;
+
+    &:nth-child(3) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &-btn-group {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  &-btn {
+    padding: 15px 40px;
+    min-width: 210px;
+    width: 100%;
+
+    &:first-child {
+      margin-bottom: 30px;
+    }
+  }
 }
 
-@keyframes flip {
-  0% {
-    opacity: 0;
-
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    animation-timing-function: ease-in;
-  }
-
-  40% {
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    animation-timing-function: ease-in;
-  }
-
-  60% {
-    opacity: 1;
-
-    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-  }
-
-  80% {
-    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-  }
-
-  100% {
-    transform: perspective(400px);
-  }
+.decor2 {
+  position: absolute;
+  bottom: -350px;
+  right: 0;
 }
-

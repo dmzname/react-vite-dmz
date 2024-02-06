@@ -10,7 +10,7 @@ $calc-position: vw(3);
   &::before, &::after {
     content: '';
     position: absolute;
-    bottom: calc(50% - 3px);
+    bottom: 2px;
 
     display: inline-block;
     width: 1px;
@@ -21,11 +21,11 @@ $calc-position: vw(3);
   }
 
   &::before {
-    left: 26px;
+    left: 30px;
   }
 
   &::after {
-    right: 30px;
+    right: 32px;
   }
 
   @media (width >= 480px) {
@@ -34,7 +34,7 @@ $calc-position: vw(3);
 
   @media (width > 1920px) {
     margin-right: vw(30);
-    
+
     &::before, &::after {
       bottom: calc(50% - #{$calc-position});
 
@@ -55,7 +55,7 @@ $calc-position: vw(3);
 .lang-link {
   padding: 0;
 
-  font-size: 12px;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: .1em;
 

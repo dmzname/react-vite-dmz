@@ -12,6 +12,7 @@ export const WelcomeSvg = () => {
 
     return (
         <svg
+            id='welcome'
             viewBox='0 0 678 53'
             fill='none'
             xmlns='http://www.w3.org/2000/svg'

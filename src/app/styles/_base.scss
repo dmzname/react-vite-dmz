@@ -5,11 +5,35 @@ body {
 
   font-weight: 400;
   font-size: 16px;
-  font-family: 'Nobile', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 
   background-color: var(--bg-color);
 
+  color: var(--text-color);
+
   @media (width > 1920px) {
     font-size: vw(16);
+  }
+}
+
+.decor-element-1 {
+  position: absolute;
+  left: -10px;
+  top: -10px;
+
+  width: 50%;
+  height: auto;
+
+  @media (width > 600px) {
+    width: 35%;
+  }
+
+  @media (width > 1281px) {
+    width: 22.8%;
+  }
+
+  @media (width > 1920px) {
+    left: vw(-10);
+    top: vw(-10);
   }
 }

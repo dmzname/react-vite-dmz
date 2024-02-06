@@ -1,17 +1,25 @@
 @import "styles/functions";
 
 .root {
-  display: block;
+  max-width: 300px;
+  display: inline-block;
 
   font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  letter-spacing: .3em;
 
   border: none;
+  border-radius: 5px;
 
   background-color: transparent;
   cursor: pointer;
 
   &[disabled] {
     opacity: .5;
+    cursor: not-allowed;
   }
 }
 
